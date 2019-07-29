@@ -156,10 +156,10 @@ jobs:
           git push origin master
         workingDirectory: '$(modulePath)'
         displayName: 'Build and publish OSX binary'
-      - task: DownloadSecureFile@1
-        inputs:
-          secureFile: 'package_cloud'
-        displayName: 'Download package cloud token file'
+      
+
+
+      
 
       - script: |
           gem install fpm
